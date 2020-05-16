@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="character.js" defer></script>
+</head>
+<body>
+    <header> 
+        <h1>Jane Austen Characters</h1>
+    </header>
+    <main>
+        <div id="characters">
+        </div>
+        <div id="create">
+            <form action="http://localhost3000/characters" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="loves">Loves</label>
+                <input type="text" name="loves" id="loves">
+                <label for="novel_id">Novel</label>
+                <select name="novel_id" id="novel_id">
+
+                </select>
+                <input type="submit" value="Make a Match">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
